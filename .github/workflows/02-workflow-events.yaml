@@ -1,5 +1,8 @@
 name: 02 - Eventos
-on: [workflow_dispatch]
+on: 
+  schedule:
+    - cron: "50 * * * *"
+  workflow_dispatch:
 
 jobs:
   echo:
